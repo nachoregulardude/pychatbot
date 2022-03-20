@@ -1,11 +1,9 @@
 import numpy as np
 import random
 import json
-
 import torch
 import torch.nn as nn
 from torch.utils.data import Dataset, DataLoader
-
 from nltk_utils import bag_of_words, tokenize, stem
 from model import NeuralNet
 
@@ -112,7 +110,7 @@ for epoch in range(num_epochs):
         print (f'Epoch [{epoch+1}/{num_epochs}], Loss: {loss.item():.4f}')
 
 
-print(f'final loss: {loss.item():.4f}')
+print(f'Final loss: {loss.item():.4f}')
 
 data = {
 "model_state": model.state_dict(),
@@ -126,4 +124,4 @@ data = {
 FILE = "data.pth"
 torch.save(data, FILE)
 
-print(f'training complete. file saved to {FILE}')
+print(f'The training is complete. The {FILE} file has been updated\n')

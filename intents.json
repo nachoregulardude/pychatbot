@@ -1,120 +1,158 @@
 {
-  "intents": [
-    {
-      "tag": "greeting",
-      "patterns": [
-        "Hi",
-        "Hey",
-        "How are you",
-        "Is anyone there?",
-        "Hello",
-        "Good day"
-      ],
-      "responses": [
-        "Hey :-)",
-        "Hello, thanks for visiting",
-        "Hi there, what can I do for you?",
-        "Hi there, how can I help?"
-      ]
-    },
-    {
-      "tag": "goodbye",
-      "patterns": ["Bye", "See you later", "Goodbye"],
-      "responses": [
-        "See you later, thanks for visiting",
-        "Have a nice day",
-        "Bye! Come back again soon."
-      ]
-    },
-    {
-      "tag": "thanks",
-      "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!"],
-      "responses": ["Happy to help!", "Any time!", "My pleasure"]
-    },
-    {
-      "tag": "services",
-      "patterns": [
-        "What services do you offer?",
-        "What kinds of services are there?",
-        "What do you sell?"
-      ],
-      "responses": [
-        "We offer paint protective coatings, collision repair, etc. Check out our services page {link} to know more",
-        "We have PPFs, Ceramic Coating, Rubber Coating, Premium Wash, and Painting services"
-      ]
-    },
-    {
-      "tag": "payments",
-      "patterns": [
-        "Do you take credit cards?",
-        "Do you accept Mastercard?",
-        "Can I pay with UPI?",
-        "Do you only accept cash?"
-      ],
-      "responses": [
-        "We accept VISA, Mastercard and UPI",
-        "We accept most major credit cards, and UPI"
-      ]
-    },
-    {
-      "tag": "duration",
-      "patterns": [
-        "How long does it take?",
-        "How long do you need my car for?",
-        "How long do you need my vehicle for?",
-        "When can I expect my vehicle?"
-      ],
-      "responses": [
-        "It depends on the service you're looking for, please give us a call to know more {call}"
-      ]
-    },
-    {
-        "tag": "pickup",
-        "patterns": [
-            "Do you offer free pick-up and deliver?"
-        ], 
-        "responses": [
-            "Yes we offer free pick-up and delivery on select services, give us a call to know more {call}"
-        ]
-    },
-    {
-        "tag": "location",
-        "patterns": [
-            "Where are you located?",
-            "Where is reflecton?",
-            "How do I get to reflecton?",
-            "What is the location",
-            "Which area are you located in?"
-        ],
-        "responses":[
-            "We are located in {location_link}",
-            "You can find us on Google Maps here {location_link}"
-        ]
-    },
-    {
-        "tag": "price",
-        "patterns": [
-            "What is the price for?",
-            "What is the cost for?",
-            "What do you charge for?",
-            "How much does it cost?"
-        ],
-        "responses": [
-            "You would need to book an appointment to get an estimate. {call} {appointment_link}",
-            "Give us a call, or book an appointment to get the pricing details."
-        ]
-    },
-    {
-      "tag": "testfunny",
-      "patterns": [
-        "Tell me a joke!",
-        "Tell me something funny!",
-        "Do you know a joke?"
-      ],
-      "responses": [
-        "Why did the hipster burn his mouth? He drank the coffee before it was cool.",
-        "What did the buffalo say when his son left for college? Bison."
-      ]
-    }
-  ]
+    "intents": [
+        {
+            "tag": "greeting",
+            "patterns": [
+                "Hi",
+                "Hey",
+                "How are you",
+                "Is anyone there?",
+                "Hello"
+            ],
+            "responses": [
+                "Hey there :-), how can I help you?",
+                "Hello, how may I assist you?",
+                "Hi there, what can I do for you?"
+            ]
+        },
+        {
+            "tag": "goodbye",
+            "patterns": [
+                "Bye",
+                "See you later",
+                "Goodbye",
+                "Good day"
+            ],
+            "responses": [
+                "See you later, thanks for visiting",
+                "Have a nice day",
+                "Bye! Call us for more details {call}"
+            ]
+        },
+        {
+            "tag": "thanks",
+            "patterns": [
+                "Thanks",
+                "Thank you",
+                "That's helpful",
+                "ok",
+                "Thank's a lot!"
+            ],
+            "responses": [
+                "Happy to help!",
+                "Any time!",
+                "My pleasure"
+            ]
+        },
+        {
+            "tag": "services",
+            "patterns": [
+                "What services do you offer?",
+                "What kinds of services are there?",
+                "What do you sell?",
+                "I have a",
+                "I own a "
+            ],
+            "responses": [
+                "We offer paint protective coatings, collision repair, etc. Check out our services page {link} to know more",
+                "We have PPFs, Ceramic Coating, Rubber Coating, Premium Wash, and Painting services"
+            ]
+        },
+        {
+            "tag": "payments",
+            "patterns": [
+                "Do you take credit cards?",
+                "Do you accept Mastercard?",
+                "Can I pay with UPI?",
+                "Do you only accept cash?"
+            ],
+            "responses": [
+                "We accept Cash,VISA, Mastercard and UPI",
+                "We accept most major credit cards, UPI and Cash"
+            ]
+        },
+        {
+            "tag": "duration",
+            "patterns": [
+                "How long does it take?",
+                "How long do you need my car for?",
+                "How long do you need my vehicle for?",
+                "When can I expect my vehicle?"
+            ],
+            "responses": [
+                "It depends on the service you're looking for, please give us a call to know more {call}"
+            ]
+        },
+        {
+            "tag": "pickup",
+            "patterns": [
+                "Do you offer free pick-up and deliver?"
+            ],
+            "responses": [
+                "Yes we offer free pick-up and delivery on select services, give us a call to know more {call}"
+            ]
+        },
+        {
+            "tag": "location",
+            "patterns": [
+                "Where are you located?",
+                "Where is reflecton?",
+                "How do I get to reflecton?",
+                "What is the location",
+                "are you near",
+                "Which area are you located in?"
+            ],
+            "responses": [
+                "We are located in {location_link}",
+                "You can find us on Google Maps here {location_link}"
+            ]
+        },
+        {
+            "tag": "appointment",
+            "patterns": [
+                "How can I book an appointment?",
+                "I want to get my car washed",
+                "I want coating for my car",
+                "I want ppf for my car",
+                "I want coating for my bike",
+                "Where do I book an appointment?",
+                "I want to book an appointment"
+            ],
+            "responses": [
+                "You can book an appointment here {link}",
+                "Give us a call to book an appointment with us."
+            ]
+        },
+        {
+            "tag": "price",
+            "patterns": [
+                "What is the price for?",
+                "I need an estimate for",
+                "What is the approximate cost",
+                "What is the approx cost",
+                "I want a rough estimate",
+                "What is the cost for?",
+                "what is the cost of",
+                "what is price of",
+                "What do you charge for?",
+                "How much does it cost?"
+            ],
+            "responses": [
+                "You would need to book an appointment to get an estimate. {call} {appointment_link}",
+                "Give us a call, or book an appointment to get the pricing details."
+            ]
+        },
+        {
+            "tag": "testfunny",
+            "patterns": [
+                "Tell me a joke!",
+                "Tell me something funny!",
+                "Do you know a joke?"
+            ],
+            "responses": [
+                "Why did the hipster burn his mouth? He drank the coffee before it was cool.",
+                "What did the buffalo say when his son left for college? Bison."
+            ]
+        }
+    ]
 }
