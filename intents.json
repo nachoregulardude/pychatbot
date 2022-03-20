@@ -5,14 +5,43 @@
             "patterns": [
                 "Hi",
                 "Hey",
-                "How are you",
                 "Is anyone there?",
                 "Hello"
             ],
             "responses": [
-                "Hey there :-), how can I help you?",
-                "Hello, how may I assist you?",
-                "Hi there, what can I do for you?"
+                "Hey there {name} :-), how can I help you today?",
+                "Hello {name}, how may I assist you?",
+                "Hiya {name}, what can I do for you?"
+            ]
+        },
+        {
+            "tag": "icebreakers",
+            "patterns": [
+                "how are you?",
+                "are you well",
+                "how are you doing",
+                "how's life",
+                "how's it going",
+                "how are you feeling"
+            ],
+            "responses": [
+                "Same old, same old... How are you {name}?",
+                "Chillin. How about yourself {name}?"
+            ]
+        },
+        {
+            "tag": "icebreakers1",
+            "patterns": [
+                "I am fine.",
+                "I'm good.",
+                "doing well",
+                "just fine",
+                "doing alright"
+            ],
+            "responses": [
+                "Glad to here {name}, how can I help you today?",
+                "That's awesome. How may I assist you today?",
+                "Coolio {name}, what are you looking for?"
             ]
         },
         {
@@ -24,9 +53,9 @@
                 "Good day"
             ],
             "responses": [
-                "See you later, thanks for visiting",
-                "Have a nice day",
-                "Bye! Call us for more details {call}"
+                "See you later, thanks for visiting! Feel free to reach us at {call}.",
+                "Have a nice day! Give us a ring at {call} for any further assistance.",
+                "Bye! Call us at {call} for more details"
             ]
         },
         {
@@ -39,9 +68,9 @@
                 "Thank's a lot!"
             ],
             "responses": [
-                "Happy to help!",
-                "Any time!",
-                "My pleasure"
+                "Happy to help! Anything else you would like to know?",
+                "Any time {name}!",
+                "My pleasure {name}."
             ]
         },
         {
@@ -54,8 +83,8 @@
                 "I own a "
             ],
             "responses": [
-                "We offer paint protective coatings, collision repair, etc. Check out our services page {link} to know more",
-                "We have PPFs, Ceramic Coating, Rubber Coating, Premium Wash, and Painting services"
+                "We offer paint protective coatings, collision repair, etc for cars and bikes. Check out our services page {appointmentlink} to know more",
+                "We have PPFs, Ceramic Coating, Rubber Coating, Premium Wash, and Painting services for cars and bikes"
             ]
         },
         {
@@ -64,7 +93,13 @@
                 "Do you take credit cards?",
                 "Do you accept Mastercard?",
                 "Can I pay with UPI?",
-                "Do you only accept cash?"
+                "Do you only accept cash?",
+                "do you accept google pay",
+                "phone pe",
+                "phone pay",
+                "do you accept gpay",
+                "can I pay through paytm",
+                "how can I pay"
             ],
             "responses": [
                 "We accept Cash,VISA, Mastercard and UPI",
@@ -76,6 +111,7 @@
             "patterns": [
                 "How long does it take?",
                 "How long do you need my car for?",
+                "How long do you need my bike for",
                 "How long do you need my vehicle for?",
                 "When can I expect my vehicle?"
             ],
@@ -86,7 +122,9 @@
         {
             "tag": "pickup",
             "patterns": [
-                "Do you offer free pick-up and deliver?"
+                "Do you offer free pick-up and deliver?",
+                "can you pick up and deliver my",
+                "do you have a pick up and delivery service"
             ],
             "responses": [
                 "Yes we offer free pick-up and delivery on select services, give us a call to know more {call}"
@@ -100,11 +138,12 @@
                 "How do I get to reflecton?",
                 "What is the location",
                 "are you near",
+                "where are you located",
                 "Which area are you located in?"
             ],
             "responses": [
-                "We are located in {location_link}",
-                "You can find us on Google Maps here {location_link}"
+                "We are located in {locationlink}",
+                "You can find us on Google Maps here {locationlink}"
             ]
         },
         {
@@ -114,13 +153,14 @@
                 "I want to get my car washed",
                 "I want coating for my car",
                 "I want ppf for my car",
+                "I want",
                 "I want coating for my bike",
                 "Where do I book an appointment?",
                 "I want to book an appointment"
             ],
             "responses": [
-                "You can book an appointment here {link}",
-                "Give us a call to book an appointment with us."
+                "You can book an appointment here {appointmentlink}",
+                "Give us a call at {call} to book an appointment with us."
             ]
         },
         {
@@ -129,6 +169,7 @@
                 "What is the price for?",
                 "I need an estimate for",
                 "What is the approximate cost",
+                "how much",
                 "What is the approx cost",
                 "I want a rough estimate",
                 "What is the cost for?",
@@ -138,7 +179,7 @@
                 "How much does it cost?"
             ],
             "responses": [
-                "You would need to book an appointment to get an estimate. {call} {appointment_link}",
+                "You would need to book an appointment to get an estimate. Give us a call {call} or book an appointment {appointmentlink}",
                 "Give us a call, or book an appointment to get the pricing details."
             ]
         },
